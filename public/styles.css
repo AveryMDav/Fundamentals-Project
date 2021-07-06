@@ -64,13 +64,51 @@ a:visited {
     100% {color:red}
 }
 
-#showFavs{
-    position: relative;
-    top: 50px;
-}
 
 #favContainer{
     position: relative;
     top: 50px;
     width: fit-content;
+}
+
+input[type=text], select {
+    position: relative;
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#addFav{
+    width: 30%;
+    background-color: #81995D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input, label {
+    display:block;
+}
+
+#showFavs{
+    width: 30%;
+    background-color: #81995D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.allFavorites{
+    position: relative;
+    top: 50px;
 }
