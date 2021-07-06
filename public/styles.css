@@ -17,3 +17,8 @@ h1 {
     75%  {color:green; left:200px;}
     100% {color:red; left:0px;}
 }
+
+#sparkle {
+    height: 426px;
+    width: 640px;
+}
