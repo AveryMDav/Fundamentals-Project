@@ -9,45 +9,39 @@
 </head>
 <body>
 <script src="./node_modules/axios/dist/axios.min.js"></script>
-    <h1>Animal Fact and Live Links</h1>
-    <nav>
-    <ol>
-        <li class="homepage"><a href="./index.html">Home</a></li>
-        <li class="animal"><a href="./hawk.html">Red-Tailed Hawks</a></li>
-        <li class="animal"><a href="./panda.html">Pandas</a></li>
-        <li class="animal"><a href="./otter.html">Otters</a></li>
-    </ol>
-    </nav>
-
+<section class="links">
+    <h1>Live Links</h1>
+        <nav>
+            <ol>
+                <li class="animal"><a href="./hawk.html">Red-Tailed Hawks</a></li>
+                <li class="animal"><a href="./panda.html">Pandas</a></li>
+                <li class="animal"><a href="./otter.html">Otters</a></li>
+            </ol>
+        </nav>
+</section>
+<section>
     <form>
-    <h4>Register As a User</h4>
-    <input type="text" id="fName" placeholder="First Name"/>
-    <input type="text" id="lName" placeholder="Last Name"/>
-    <input type="text" id="uName" placeholder="User Name"/>
-    <button type="button" id="user">Register</button>
+        <h4>Add your favorite animal!</h4>
+        <input type="text" id="name" placeholder="Your Name"/>
+        <br>
+        <input type="text" id="favAnimal" placeholder="Favorite Animal"/>
     </form>
+        <button type="button" id="addFav">Add</button>
+</section>
+    <section class="allFavorites">
+    <button type"button" id="showFavs">Show All</button>
+    <div type="text" id="favContainer"></div>
+</section>
 
-    <form>
-    <h4>Log In</h4>
-    <input type="text" id="loginUName" placeholder="Enter User Name"/>
-    <button type="button" id="log-in">Log In</button>
-    </form>
-
-    <form>
-    <h4>Add your favorite animal!</h4>
-    <input type="text" id="name" placeholder="Your Name"/>
-    <input type="text" id="favAnimal" placeholder="Favorite Animal"/>
-    <button type="button" id="addFav">Add</button>
-    </form>
-
-    <h1 id="spMuff"><img src="https://img.icons8.com/cute-clipart/30/000000/spider.png"/>SPARKLEMUFFIN<img src="https://img.icons8.com/cute-clipart/30/000000/spider.png"/></h1>
-    <script src="./index.js"></script>
-
-
-    <section id="sparkle">
+<footer id="sparkle">
     <div class="tenor-gif-embed" data-postid="8070876" data-share-method="host" data-width="100%" data-aspect-ratio="1.7857142857142858">
     <a href="https://tenor.com/view/bugs-spiders-dancing-spider-peacock-spider-edit-gif-8070876">Bugs Spiders GIF</a> from <a href="https://tenor.com/search/bugs-gifs">Bugs GIFs</a></div>
     <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-    </section>
+</footer>
+
+      
+<h1 id="spMuff"><img src="https://img.icons8.com/cute-clipart/30/000000/spider.png"/>SPARKLEMUFFIN<img src="https://img.icons8.com/cute-clipart/30/000000/spider.png"/></h1>
+
+<script src="./index.js"></script>
 </body>
 </html>

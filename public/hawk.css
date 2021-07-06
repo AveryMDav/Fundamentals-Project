@@ -1,6 +1,37 @@
-h1 {
-    color: blue;
+body {
+    background: #7C8399;
 }
+
+.top-header {
+    background: #81995D;
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+ol {
+    padding-left: 0;
+}
+
+.animal {
+    margin-right: 2em;
+    display: inline;
+}
+
+h1 {
+    color: #81995D
+}
+
+a {
+    color: #A4E6D0;
+}
+
+a:visited {
+    color: #C6E697;
+}
+
+
 #spMuff {
     color: purple;
     animation-name: sparkle;

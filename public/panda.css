@@ -1,3 +1,31 @@
+body {
+    background: #7C8399;
+}
+
+nav {
+    background: #81995D;
+}
+
+ol {
+    padding-left: 0;
+}
+
+.animal {
+    margin-right: 2em;
+    display: inline;
+}
+
+h1 {
+    color: blue;
+}
+
+a {
+    color: #A4E6D0;
+}
+
+a:visited {
+    color: #C6E697;
+}
 h1 {
     color: blue;
 }

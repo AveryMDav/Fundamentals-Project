@@ -23,10 +23,15 @@ module.exports = {
     },
 
     addFav: (req,res) => {
-        console.log(req.body)
-        const {name, favoriteAnimal} = req.body;
-        favAnimal.push(req.body);
-        return res.status(200).send(res);
+        const {favoriteAnimal} = req.body
+        favAnimal.push(favoriteAnimal)
+        let infoToReturn = favoriteAnimal
+        console.log(favAnimal)
+        return res.status(200).send(infoToReturn);
+    },
+
+    showFavs: (req,res) => {
+        res.status(200).send(favAnimal)
     }
 }
 

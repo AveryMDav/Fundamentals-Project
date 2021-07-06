@@ -1,24 +1,76 @@
-h1 {
-    color: blue;
+body {
+    background: #7C8399;
 }
+
+.links {
+    background: #81995D;
+    margin: 0;
+    padding: 0;
+    top: 20px;
+    width: 450px;
+}
+
+ol {
+    position: absolute;
+    left: 5%;
+    top: 10px;
+}
+
+.animal {
+    margin-right: 2em;
+    display: inline;
+}
+
+h1 {
+    color: #C6E697
+}
+
+a {
+    color: #A4E6D0;
+}
+
+a:visited {
+    color: #C6E697;
+}
+
+#sparkle{
+    height: 426px;
+    width: 640px;
+}
+
+.tenor-gif-embed{
+    display: none;
+}
+
 #spMuff {
+    position:absolute;
+    width:fit-content;
+    bottom:0px;
+    right:25%;
+    left:50%;
+    margin-left:-150px;
     color: purple;
     animation-name: sparkle;
     animation-duration: 5s;
     position: relative;
-    animation-iteration-count: 10;
-    width:fit-content;
+    animation-iteration-count: infinite;
 }
 
 @keyframes sparkle {
-    0%   {color:red; left:0px;}
-    25%  {color:yellow; left:200px;}
-    50%  {color:blue;  left:0px;}
-    75%  {color:green; left:200px;}
-    100% {color:red; left:0px;}
+    0%   {color:red}
+    25%  {color:yellow}
+    50%  {color:blue}
+    75%  {color:green}
+    100% {color:red}
 }
 
-#sparkle {
-    height: 426px;
-    width: 640px;
+#showFavs{
+    position: relative;
+    top: 50px;
+}
+
+#favContainer{
+    position: relative;
+    top: 50px;
+    width: fit-content;
 }
