@@ -8,7 +8,7 @@ const { } = controller;
 app.use(cors());
 app.use(express.static(path.join(__dirname, '../public')));
 
-// app.get("/api/live-decorah", getDecorah);
+app.get("/api/", get);
 // app.get("/api/live-decorah", getDecorah);
 // app.get("/api/live-decorah", getDecorah);
 

@@ -17,24 +17,23 @@ const register = function(body) {
 }
 
 function registerSubmitHandler(e) {
-    alert('IT WORKS')
-    // e.preventDefault();
+    e.preventDefault();
 
-    // let firstname = document.querySelector("#fName");
-    // let lastname = document.querySelector("#lName");
-    // let username = document.querySelector("#uName");
+    let firstname = document.querySelector("#fName");
+    let lastname = document.querySelector("#lName");
+    let username = document.querySelector("#uName");
 
-    // let bodyObj = {
-    //     firstname: firstname.value,
-    //     lastname: lastname.value,
-    //     username: username.value
-    // };
+    let bodyObj = {
+        firstname: firstname.value,
+        lastname: lastname.value,
+        username: username.value
+    };
 
-    // register(bodyObj)
+    register(bodyObj)
 
-    // firstname.value = '';
-    // lastname.value = '';
-    // username.value = '';
+    firstname.value = '';
+    lastname.value = '';
+    username.value = '';
 }
 // functions for creating a new user
 
@@ -46,17 +45,16 @@ const login = function(body){
 
 
 function loginSubmitHandler(e) {
-    alert('IT WORKS')
-    // e.preventDefault();
+    e.preventDefault();
 
-    // let username = document.querySelector('#loginUName');
+    let username = document.querySelector('#loginUName');
 
-    // let bodyObj = {
-    //     username: username.value
-    // };
+    let bodyObj = {
+        username: username.value
+    };
 
-    // login(bodyObj);
+    login(bodyObj);
 
-    // username.value = '';
+    username.value = '';
 }
 // functions for logging in a user
