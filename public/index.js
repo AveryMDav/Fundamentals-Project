@@ -24,7 +24,7 @@ sparklemuffin.addEventListener('click', partyMuffin)
 
 function uploadFav(body){
     axios.post(`${baseURL}/favorite-animal`, body)
-    .then(alert('submit successful'))
+    .then(favCallBack)
     .catch(catchError)
 }
 
@@ -37,8 +37,6 @@ function addFavHandler(e) {
         favoriteAnimal: `${name.value}'s favorite animal is a ${favoriteAnimal.value}`
     }
     uploadFav(bodyObj)
-
-    delete favoriteAnimal.value
 }
 
 // adding a new favorite animal
@@ -59,10 +57,8 @@ function createFavLine(favs){
 
 function displayFavorites(arr){
     console.log(arr)
-    favContainer.innerHTML = ``
-    for(let i=0; i<arr.length; i++){
-        createFavLine(arr[i])
-    }
+    // favContainer.innerHTML = ``
+    createFavLine(arr)
 }
 // pull array of added favorites and display them
 
