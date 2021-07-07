@@ -1,0 +1,91 @@
+body {
+    background: #7C8399;
+}
+
+nav {
+    background: #81995D;
+}
+
+ol {
+    padding-left: 0;
+}
+
+.animal {
+    margin-right: 2em;
+    display: inline;
+}
+
+h1 {
+    color: blue;
+}
+
+a {
+    color: #A4E6D0;
+}
+
+a:visited {
+    color: #C6E697;
+}
+h1 {
+    color: blue;
+}
+
+#fun-facts1 {
+    display: flex;
+    margin: 50px;
+}
+
+#pic1 {
+    flex: 1;
+}
+
+#fun-facts2 {
+    display: flex;
+    margin: 50px;
+}
+
+.dropbtn {
+    background-color: #7B96E8;
+    color: #C6E697;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980b9;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content li{
+    color: #C6E697;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content li:hover{
+    background-color: #ddd;
+}
+
+.show{
+    display: block;
+}
+
+.live-feed{
+    position: absolute;
+}
