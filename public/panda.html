@@ -20,12 +20,12 @@
 </header>
 <section id="fun-facts1">
 <img src="pics/panda1.jpg" width="640" height="426"></img>
-    <div id ="one" class="dropdown">
-    <button onclick="dropdown()" class="dropbtn">Dropdown</button>
-        <ul id="myDropdown" class="dropdown-content">
-            <li class="fact">this is also a rock fact</li>
-            <li class="fact">this is also a rock fact</li>
-            <li class="fact">this is also a rock fact</li>
+    <div class="dropdown">
+    <button id ="one" onclick="dropdown(this)" class="dropbtn">Dropdown</button>
+        <ul id="myDropdown-one" class="dropdown-content">
+            <li class="fact">>> Like other bears, pandas can swim! They do not, however, hibernate, as they are unable to store energy over long periods of time (hence their 12-hour eating routine). </li>
+            <li class="fact">>> Newborn pandas are pink!</li>
+            <li class="fact">>> Panda cubs can be as small as a stick of butter- they are approximately 1/900th the size of their mother at birth.</li>
         </ul>
     </div>
 </section>
@@ -33,14 +33,33 @@
 <section id="fun-facts2">
 <img src="pics/panda2.jpg" width="640" height="426"></img>
     <div class="dropdown">
-    <button onclick="dropdown()" class="dropbtn">Dropdown</button>
-        <ul id="myDropdown" class="dropdown-content">
-            <li class="fact">this is also a rock fact</li>
-            <li class="fact">this is also a rock fact</li>
-            <li class="fact">this is also a rock fact</li>
+    <button id="two" onclick="dropdown(this)" class="dropbtn">Dropdown</button>
+        <ul id="myDropdown-two" class="dropdown-content">
+            <li class="fact">>> Panda cubs can climb trees at just the young age of six months!</li>
+            <li class="fact">>> “Giant panda” is actually just a nickname for a panda; they are no specifically larger than others.</li>
+            <li class="fact">>> Adult panda bears can weigh as much as 45 kilos (100 pounds).</li>
         </ul>
     </div>
 </section>
+<script>
+function dropdown(e){
+    console.log(e.id)
+    document.getElementById("myDropdown-" + e.id).classList.toggle("show")
+};
+
+window.onclick = function(event){
+    if (!event.target.matches('.dropbtn')) {
+    let dropdowns = document.getElementsByClassName("dropdown-content");
+    let i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 </body>
 </html>
 

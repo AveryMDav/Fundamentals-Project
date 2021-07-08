@@ -2,18 +2,12 @@ body {
     background: #7C8399;
 }
 
-.links {
+nav {
     background: #81995D;
-    margin: 0;
-    padding: 0;
-    top: 20px;
-    width: 450px;
 }
 
 ol {
-    position: absolute;
-    left: 7%;
-    top: 10px;
+    padding-left: 0;
 }
 
 .animal {
@@ -22,7 +16,7 @@ ol {
 }
 
 h1 {
-    color: #C6E697
+    color: blue;
 }
 
 a {
@@ -30,6 +24,10 @@ a {
 }
 
 a:visited {
+    color: #C6E697;
+}
+
+h1 {
     color: #C6E697;
 }
 

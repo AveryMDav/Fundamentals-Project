@@ -18,7 +18,6 @@ const favCallBack = function({data: favorites}){
 // registerNewUser.addEventListener('click',registerSubmitHandler);
 // logInUser.addEventListener('click',loginSubmitHandler);
 addFav.addEventListener('click', addFavHandler)
-showAllFavs.addEventListener('click', pullFavs)
 sparklemuffin.addEventListener('click', partyMuffin)
 // creates interactivity for buttons when clicked
 

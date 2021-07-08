@@ -21,12 +21,12 @@
 </header>
 <section id="fun-facts1">
 <img src="pics/otter1.jpg" width="640" height="426"></img>
-    <div id ="one" class="dropdown">
-    <button onclick="dropdown()" class="dropbtn">Dropdown</button>
-        <ul id="myDropdown" class="dropdown-content">
-            <li class="fact">this is also a rock fact</li>
-            <li class="fact">this is also a rock fact</li>
-            <li class="fact">this is also a rock fact</li>
+    <div class="dropdown">
+    <button id ="one" onclick="dropdown(this)" class="dropbtn">Dropdown</button>
+        <ul id="myDropdown-one" class="dropdown-content">
+            <li class="fact">>> Clever creatures, they'll use rocks to crack open the clams. They carry rocks and store food in the loose skin under their armpits - who needs carrier bags! </li>
+            <li class="fact">>>An otter pup's fur is too dense for it to swim underwater. So, their mother leaves them floating while she searches for food, until their adult fur grows in. </li>
+            <li class="fact">>> Don't challenge an otter to a holding-your-breath competition! Sea otters can stay underwater for 5 minutes, and river otters can hold their breath for even longer - 8 minutes! </li>
         </ul>
     </div>
 </section>
@@ -34,14 +34,33 @@
 <section id="fun-facts2">
 <img src="pics/otter2.jpg" width="640" height="426"></img>
     <div class="dropdown">
-    <button onclick="dropdown()" class="dropbtn">Dropdown</button>
-        <ul id="myDropdown" class="dropdown-content">
-            <li class="fact">this is also a rock fact</li>
-            <li class="fact">this is also a rock fact</li>
-            <li class="fact">this is also a rock fact</li>
+    <button id="two" onclick="dropdown(this)" class="dropbtn">Dropdown</button>
+        <ul id="myDropdown-two" class="dropdown-content">
+            <li class="fact">>> 90% of all sea otters live on the coast of Alaska. </li>
+            <li class="fact">>> They're hungry animals! Sea otters eat 25% of their body weight in food every day.</li>
+            <li class="fact">>> Unlike most marine mammals, they don't have a layer of blubber. But, they do have the thickest fur of all animals.</li>
         </ul>
     </div>
 </section>
+<script>
+function dropdown(e){
+    console.log(e.id)
+    document.getElementById("myDropdown-" + e.id).classList.toggle("show")
+};
+
+window.onclick = function(event){
+    if (!event.target.matches('.dropbtn')) {
+    let dropdowns = document.getElementsByClassName("dropdown-content");
+    let i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 </body>
 </html>
 
